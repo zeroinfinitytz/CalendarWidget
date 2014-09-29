@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<title>jQuery UI Example Page</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+</head>
+<body>
+<h1>Hello Date Picker
+<hr/>
+
+<div>
+<input id="myDP" type="text" placeholder="pick a date"/>
+<input id="actDP" type="text" placeholder="This is where the altDate will be"/>
+<input id="hiddenDP" type="text" style="display:none;height:0px"/>
+<button id="getMyDate">Get Date</button>
+</div>
+<div>
+<label id="msg"></label>
+</div>
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+$(function(){
+	$('#hiddenDP').datepicker({
+		onSelect:updateAb
+	});
+	$('#myDP').on('click',function(ev){
+		$('#hiddenDP').datepicker('show');
+		
+	
+	});
+
+	$('#getMyDate').on('click', function(ev){
+		var vle = $('#hiddenDP').datepicker('getDate');
+		 
+		var end = $.datepicker.parseDate('mm/dd/y', vle);
+
+		$('#msg').val(end);
+	});
+
+	function updateAb(dateText, inst){
+		var instD = $(inst);
+		$("#myDP").val(instD.attr('currentYear'));
+		var day = instD.attr('currentDay');
+		var month = instD.attr('currentMonth');
+		var year = instD.attr('currentYear');
+
+		var nDate = new Date(year, month,day);
+		var sDate = $.datepicker.formatDate('D, M. d', nDate);
+		$('#myDP').val(sDate);
+		$('#hiddenDP').datepicker('setDate', nDate);
+		$('#hiddenDP').attr('currentYear', year);
+		$('#hiddenDP').attr('drawYear', year);
+	}
+})
+</script>
+</body>
+</html>

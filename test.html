@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+function WidgetEnum() {
+    var compareWidgetEnums = {
+        Unkown: 0,
+        Flights: 120001,
+        Hotels: 120002,
+        CarRentals: 120003,
+        Vacations: 120005,
+        Holidays: 120050,
+        OpenTiles_Flights: 120101,
+        OpenTiles_Hotels : 120102,
+        OpenTiles_CarRentals : 120103,
+        OpenTiles_Vacations : 120105,
+        OpenTiles_Holidays : 120150
+    }
+
+    return compareWidgetEnums;
+}
+
+var wid = new WidgetEnum().Hotels;
+
+console.log(wid);
+
+
+
+function WidgetUrls() {
+    var urls = {
+        Hotels: 'http://dev.www.travelzoo.com/_ws/SuperSearchOpenTilesHandler.ashx?destination={0}&tzlocale={1}&start={2}&end={3}&keyword={4}&tab={5}&catid=95009800&max={6}&guests={7}'
+    };
+
+        return urls;
+}
+
+console.log(WidgetUrls().Hotels);
+</script
+</body>
+</html>

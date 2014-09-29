@@ -1,0 +1,273 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Wid",
+				"WidgetUrls"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<div class=\"row tzsg-body\" id=\"ss_hotels\" style=\"display: block;\">\n    <div class=\"rightCol container grayTheme mediumBottomMargin tzsg-padding-all-lg\">\n        <form name=\"form_SuperSearchTopRight_Hotel\" id=\"form_SuperSearchTopRight_Hotel\" onsubmit=\"return convertDates('#StartDate_Hotel','#StartDate_HotelH','#EndDate_Hotel','#EndDate_HotelH') &amp;&amp; opentileValidDates('#StartDate_Hotel', '#EndDate_Hotel', 'Check-in', 'Check-out') &amp;&amp; opentileValidCity('#txtDestination_Hotel', 'Enter City Here', 'City');\" method=\"get\" class=\"formSuperSearchTopRight\">\n            <div id=\"SSOpenTiles_Hotel\" class=\"grayTheme mediumPadding mediumMargin SSOpenTiles\">\n                <h3>Compare Hotel Rates</h3>\n                <div class=\"tinyTopMargin mediumBottomMargin ss-widget-subtitle\"></div>\n                <div class=\"row\">\n                 <span class=\"tzsg-input-text-clear mediumBottomMargin\">\n                    <input type=\"text\" id=\"txtDestination_Hotel\" value=\"\" name=\"DestinationCityName\" class=\"gdac_enabled ac_input mediumBottomMargin\" gdacexcc=\"cu\" gdacpcc=\"us\" gdactype=\"city\" maxlength=\"100\" autocomplete=\"off\">\n                     <button type=\"button\" class=\"tzsg-reset\" title=\"Clear\" tabindex=\"-1\">Clear</button>\n                    </span>\n                    <input name=\"destination\" type=\"hidden\" id=\"txtDestination_HotelHidden\" value=\"112100\">\n                </div>\n                    <div class=\"row\" id=\"dvStartDateHotels\">\n                        <span class=\"tzsg-input-datepicker tzsg-field-width-halfwidth-lt mediumBottomMargin\">\n                            <input type=\"text\" maxlength=\"11\" size=\"11\" class=\"datepicker showdatestartlabelhotel mediumBottomMargin dateButton hasDatepicker dateformatstyle\" id=\"StartDate_Hotel\" name=\"StartDate\" onchange=\"convertDates('#StartDate_Hotel','#StartDate_HotelH','#EndDate_Hotel','#EndDate_HotelH');refreshTiles('120002', '/_ws/SuperSearchOpenTilesHandler.ashx');\"><img class=\"ui-datepicker-trigger\" src=\"http://data.travelzoo.com/static/images/calendar.gif\" alt=\"calendar\" title=\"calendar\">\n                        </span>\n                    </div>\n                <input name=\"checkin\" type=\"hidden\" id=\"StartDate_HotelH\">\n                    <div class=\"row\" id=\"dvEndDateHotels\">\n                        <span class=\"tzsg-input-datepicker tzsg-field-width-halfwidth-lt mediumBottomMargin\">\n                            <input type=\"text\" maxlength=\"11\" size=\"11\" class=\"datepicker showdateendlabelhotel mediumBottomMargin dateButton hasDatepicker dateformatstyle\" id=\"EndDate_Hotel\" name=\"EndDate\" onchange=\"convertDates('#StartDate_Hotel','#StartDate_HotelH','#EndDate_Hotel','#EndDate_HotelH');refreshTiles('120002', '/_ws/SuperSearchOpenTilesHandler.ashx');\"><img class=\"ui-datepicker-trigger\" src=\"http://data.travelzoo.com/static/images/calendar.gif\" alt=\"calendar\" title=\"calendar\">\n                        </span>\n                    </div>\n                <input name=\"checkout\" type=\"hidden\" id=\"EndDate_HotelH\">\n                <div class=\"row\">\n                    <select id=\"NumTravelers_Hotel\" class=\"tzsg-select-box ssSelects\">\n                        <option value=\"1\">1 Guest in 1 Room</option>\n                        <option value=\"2\">2 Guests in 1 Room</option>\n                        <option value=\"3\">3 Guests in 1 Room</option>\n                        <option value=\"4\">4 Guests in 1 Room</option>\n                        <option value=\"5\">2 Guests in 2 Rooms</option>\n                    </select>\n                    <input name=\"numRooms\" type=\"hidden\" id=\"Rooms_Hotel\" value=\"1\">\n                    <input name=\"numGuests\" id=\"Guests_Hotel\" value=\"1\" type=\"hidden\">\n                </div>\n                <div id=\"placements_Hotel\" class=\"row placementTiles\" style=\"\"><div id=\"1818955\" class=\"row tile\"><img align=\"left\" height=\"31\" width=\"88\" title=\"Trivago\" alt=\"Trivago\" src=\"http://cache.travelzoo.com/images/tzoo.s.69306.121213.jpg\"><a class=\"tzsg-button-light-popout-hidetext fr\"></a></div><div id=\"1667157\" class=\"row tile\"><img align=\"left\" height=\"31\" width=\"88\" title=\"Booking.com\" alt=\"Booking.com\" src=\"http://cache.travelzoo.com/images/tzoo.s.13851.061312.jpg\"><a class=\"tzsg-button-light-popout-hidetext fr\"></a></div><div id=\"1747817\" class=\"row tile\"><img align=\"left\" height=\"31\" width=\"88\" title=\"Hotwire\" alt=\"Hotwire\" src=\"http://cache.travelzoo.com/images/tzoo.s.10532.redhotwire.gif\"><a class=\"tzsg-button-light-popout-hidetext fr\"></a></div><div id=\"1824477\" class=\"row tile\"><img align=\"left\" height=\"31\" width=\"88\" title=\"TripAdvisor\" alt=\"TripAdvisor\" src=\"http://cache.travelzoo.com/images/tzoo.s.59356.111512.gif\"><a class=\"tzsg-button-light-popout-hidetext fr\"></a></div></div>\n                <div id=\"compare_Hotel\" class=\"placementsBottom\" style=\"\">\n                <button class=\"tzsg-button-light-popout\" id=\"btnCompareAll\" onclick=\"openAll('placements_Hotel', '#StartDate_Hotel', '#EndDate_Hotel', 'Check-in', 'Check-out'); return false;\" type=\"submit\">Compare All Rates</button>\n                </div>\n                <div class=\"row ssBlurb\" id=\"blurb_Hotel\" style=\"\">\n                    Recommended sites will launch in a new window\n                </div>\n                <div class=\"row\" id=\"closedTilesSearch_Hotel\" style=\"text-align: center; display: none;\">\n                    <button class=\"tzsg-button-width-fullwidth tzsg-button-light-pointer\" id=\"btnSearch\" type=\"submit\">Compare Travel Sites</button>\n                </div>\n                    <div class=\"row bottomLogo\" id=\"bottomLogo\">\n                        <a href=\"http://www.travelzoo.com/supersearch/hotels/?catid=9800&amp;marketing=1\"><img src=\"http://www.tzoo-img.com/static/images/supersearch/supersearch.gif?86\" width=\"91px\" height=\"45px\" alt=\"SuperSearch\"></a>\n                    </div>\n            </div>\n            <input type=\"hidden\" value=\"95009800\" name=\"catid\">\n            <input type=\"hidden\" value=\"true\" name=\"ForceSearch\">\n            <input type=\"hidden\" value=\"1\" name=\"marketing\">\n            <input type=\"hidden\" value=\"true\" name=\"CountInbound\">\n        </form>\n    </div>\n</div>",
+			"settings":
+			{
+				"buffer_size": 6126,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<div class=\"row\">\n	<div class=\"col-md-12\">\n		<h2>Compare Hotel Rates</h2>\n		<input type=\"text\" required />\n		<input type=\"date\" required />\n		<input type=\"date\" required />\n		<select id=\"numberOfTravelers\">\n			<option value=\"1\">1 Guest in 1 Room</option>\n			<option value=\"2\">2 Guest in 1 Room</option>\n			<option value=\"3\">3 Guest in 1 Room</option>\n			<option value=\"4\">4 Guest in 1 Room</option>\n			<option value=\"5\">2 Guest in 2 Rooms</option>\n		</select>\n\n		<p>\n			<span>\n		</p>\n	</div>\n</div>",
+			"settings":
+			{
+				"buffer_size": 498,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test.html",
+			"settings":
+			{
+				"buffer_size": 873,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 196.0,
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 91.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Sublime/Projects/Widget/Widget.sublime-project"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6126,
+								6126
+							]
+						],
+						"settings":
+						{
+							"default_dir": "D:\\Sublime\\Projects\\Widget",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 498,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								498,
+								498
+							]
+						],
+						"settings":
+						{
+							"default_dir": "D:\\Sublime\\Projects\\Widget",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								812,
+								812
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Widget.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
